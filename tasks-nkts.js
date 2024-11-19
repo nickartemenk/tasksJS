@@ -5,7 +5,7 @@
 // console.log('arr' + " - object") // СТРОКА
 // console.log(5 + " - object") // СТРОКА
 // console.log(5 + +" - object") // NaN ЧИСЛО ПЛЮС СТРОКА
-// console.log(1 + +"1") // 2 
+// console.log(1 + +"1") // 2
 
 // let incr = 10;
 // let decr = 10;
@@ -21,7 +21,6 @@
 // console.log(incr);
 // console.log(decr);
 
-
 // 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
 // 'Сколько фильмов вы уже посмотрели?'
 
@@ -36,11 +35,10 @@
 //     - 'Один из последних просмотренных фильмов?'
 //     - 'На сколько оцените его?'
 // Ответы стоит поместить в отдельные переменные
-// Записать ответы в объект movies в формате: 
+// Записать ответы в объект movies в формате:
 //     movies: {
 //         'logan': '8.1'
 //     }
-
 
 // const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?')
 
@@ -57,11 +55,9 @@
 // // const cQuestion = prompt('Один из последних просмотренных фильмов?', '')
 // // const dQuestion = +prompt('На сколько оцените его?', '')
 
-// personalMovieDB.movies[aQuestion] = bQuestion; 
+// personalMovieDB.movies[aQuestion] = bQuestion;
 
 // console.log(personalMovieDB)
-
-
 
 // УСЛОВИЯ
 
@@ -87,14 +83,13 @@
 //     case 49:
 //         console.log('Неверно');
 //         break;
-//     case 100: 
-//         console.log('Неверно')  
+//     case 100:
+//         console.log('Неверно')
 //     case 50:
-//         console.log('В точку')  
+//         console.log('В точку')
 //     default:
-//         console.log('Не в этот раз')      
+//         console.log('Не в этот раз')
 // }
-
 
 // ЛОГИЧЕСКИЕ ОПЕРАТОРЫ
 
@@ -124,7 +119,6 @@
 // //     console.log('мы уходим')
 // // }
 
-
 // const hamburger = 3;
 // const fries = 3;
 // const cola = 0;
@@ -142,7 +136,6 @@
 
 // // console.log(johnReport||alexReport||samReport||mariaReport);
 
-
 // ЦИКЛЫ
 
 // let num = 50;
@@ -159,7 +152,7 @@
 // while (num <= 55);
 
 // for (let i = 1; i <= 10; i++) {
-    
+
 //     num++;
 
 //     if(num === 56) {
@@ -175,7 +168,7 @@
 //     console.log(i)
 //     for (let j = 1; j <= 3; j++) {
 //         console.log(j)
-        
+
 //     }
 // }
 
@@ -202,8 +195,6 @@
 
 // console.log(result);
 
-
-
 // first: for (let i = 0; i < 3; i++) {
 //     console.log(`first level: ${i}`)
 //     for (let j = 0; j < 3; j++) {
@@ -214,7 +205,6 @@
 //         }
 //     }
 // }
-
 
 // 1. При помощи цикла выведите числа от 5 до 10 в консоль. 5 и 10 включительно. Цикл можно использовать любой
 
@@ -233,8 +223,8 @@
 //             break;
 //         }
 //         console.log(i)
-//     }   
-    
+//     }
+
 // }
 // secondTask()
 
@@ -243,7 +233,7 @@
 // function thirdTask() {
 //     for (let i = 2; i <= 10; i+=2) {
 //         console.log(i)
-//     } 
+//     }
 // }
 
 // thirdTask()
@@ -253,7 +243,7 @@
 //         if (i % 2 == 0) {
 //             console.log(i)
 //         }
-//     } 
+//     }
 // }
 
 // thirdTask()
@@ -262,24 +252,23 @@
 
 // function fourthTask() { // МОЕ РЕШЕНИЕ
 //     const arrayOfNumbers = [];
-    
+
 //     for (let i = 5; i <= 10; i++) {
 //         arrayOfNumbers.push(i);
 //     }
-    
+
 //     console.log(arrayOfNumbers);
 //     return arrayOfNumbers;
 // }
 
 // fourthTask();
 
-
 // function fourthTask() { // РЕШЕНИЕ НА САЙТЕ
-    
+
 //     const arrayOfNumbers = [];
 
 //     for (let i = 5; i < 11; i++) {
-//         arrayOfNumbers[i - 5] = i;   
+//         arrayOfNumbers[i - 5] = i;
 //     }
 //     console.log(arrayOfNumbers)
 //     return arrayOfNumbers;
@@ -287,33 +276,31 @@
 
 // fourthTask()
 
-
 // СЛОЖНЕЕ ЗАДАЧИ на использование циклов и условий
 
 // 1.Заполните новый массив (result) числами из старого (arr) Должен получиться точно такой же массив Значения массива менять нельзя
 
-
 // function firstTask() {
-    
+
 //     let arr = [3, 5, 8, 16, 20, 23, 50];
 //     let result = [];
 
 //     result = arr
-    
+
 //     return result;
 // }
 
 // firstTask()
 
 // function firstTask() {
-    
+
 //     let arr = [3, 5, 8, 16, 20, 23, 50];
 //     let result = [];
 
 //     for (let i = 0; i < arr.length; i++) {
 //         result[i] = arr[i]
 //     }
-    
+
 //     console.log(result)
 //     return result;
 // }
@@ -330,9 +317,49 @@
 //     for (let i = 1; i <= data.length; i++) {
 //         result[i - 1] = data[data.length - i]
 //     }
-    
+
 //     console.log(result)
 //     return result;
 // }
 
 // thirdTask()
+
+// ФУНКЦИИ
+
+// let num = 20;
+
+// function showFirstMessage(text) {
+
+//     console.log(text)
+//     let num = 10;
+//     console.log(num)
+// }
+
+// console.log(num)
+// showFirstMessage('hello world')
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(4, 3))
+// console.log(calc(5, 6))
+// console.log(calc(10, 6))
+
+// function ret() {
+//     let num = 50;
+
+//     return num;
+// }
+
+// const anotherNum = ret();
+
+// console.log(anotherNum);
+
+// const usdCurr = 28;
+
+// function convert (amount, curr) {
+//     console.log(curr * amount)
+// }
+
+// convert(500, usdCurr);
