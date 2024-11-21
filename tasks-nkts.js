@@ -357,9 +357,32 @@
 // console.log(anotherNum);
 
 // const usdCurr = 28;
+// const discount = 2;
 
-// function convert (amount, curr) {
-//     console.log(curr * amount)
+// function convert(amount, curr) {
+//   return amount * curr;
 // }
 
-// convert(500, usdCurr);
+// function promotion(result) {
+//   console.log(result / discount);
+// }
+
+// const res = convert(500, usdCurr);
+// promotion(res);
+
+// function test() {
+//   for (let i = 0; i < 5; i++) {
+//     console.log(i);
+//     if (i === 3) return;
+//   }
+//   console.log("done");
+// }
+
+// test();
+
+// const nameI = "Иван";
+
+// function sayHello(name) {
+//   return `привет ${name}`;
+// }
+// console.log(sayHello(nameI));

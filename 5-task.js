@@ -10,13 +10,20 @@
 const friends = [
   { name: "alex", pizzas: ["cheese", "pepperoni"] },
   { name: "mike", pizzas: ["salami", "margarita"] },
-  { name: "stas", pizzas: ["meat"] },
-  { name: "anna", pizzas: ["fish"] },
+  { name: "stas", pizzas: ["meat", "salami"] },
+  { name: "anna", pizzas: ["fish", "cheese"] },
 ];
+
+// const friends = [
+//   { name: "alex", pizzas: ["cheese", "pepperoni"] },
+//   { name: "mike", pizzas: ["salami", "margarita"] },
+//   { name: "stas", pizzas: ["meat"] },
+//   { name: "anna", pizzas: ["fish"] },
+// ];
 
 const allPizzas = friends.reduce((newArrPizzas, friend) => {
   for (let pizza of friend.pizzas) {
-    newArrPizzas.push(pizza);
+    if (!newArrPizzas.includes(pizza)) newArrPizzas.push(pizza);
   }
   return newArrPizzas;
 }, []);
