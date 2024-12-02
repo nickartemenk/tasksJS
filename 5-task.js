@@ -7,12 +7,12 @@
 
 // метод reduce
 
-const friends = [
-  { name: "alex", pizzas: ["cheese", "pepperoni"] },
-  { name: "mike", pizzas: ["salami", "margarita"] },
-  { name: "stas", pizzas: ["meat", "salami"] },
-  { name: "anna", pizzas: ["fish", "cheese"] },
-];
+// const friends = [
+//   { name: "alex", pizzas: ["cheese", "pepperoni"] },
+//   { name: "mike", pizzas: ["salami", "margarita"] },
+//   { name: "stas", pizzas: ["meat", "salami"] },
+//   { name: "anna", pizzas: ["fish", "cheese"] },
+// ];
 
 // const friends = [
 //   { name: "alex", pizzas: ["cheese", "pepperoni"] },
@@ -21,11 +21,11 @@ const friends = [
 //   { name: "anna", pizzas: ["fish"] },
 // ];
 
-const allPizzas = friends.reduce((newArrPizzas, friend) => {
-  for (let pizza of friend.pizzas) {
-    if (!newArrPizzas.includes(pizza)) newArrPizzas.push(pizza);
-  }
-  return newArrPizzas;
-}, []);
+// const allPizzas = friends.reduce((newArrPizzas, friend) => {
+//   for (let pizza of friend.pizzas) {
+//     if (!newArrPizzas.includes(pizza)) newArrPizzas.push(pizza);
+//   }
+//   return newArrPizzas;
+// }, []);
 
-console.log(allPizzas);
+// console.log(allPizzas);
