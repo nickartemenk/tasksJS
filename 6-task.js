@@ -1,5 +1,5 @@
-const myStr = "pizza";
+// const myStr = "pizza";
 
-const reverseStr = myStr.split("").reverse().join("");
+// const reverseStr = myStr.split("").reverse().join("");
 
-console.log(reverseStr);
+// console.log(reverseStr);
