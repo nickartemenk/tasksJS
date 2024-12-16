@@ -1,7 +1,53 @@
 const display = document.getElementById("display");
 const buttonGroup = document.getElementById("button-group");
 
-buttonGroup.addEventListener("click", function (event) {
+document.addEventListener("keydown", (event) => {
+  const key = event.key;
+
+  if ("0123456789+-*/.".includes(key)) {
+    const currentValue = display.value;
+
+    if (key === "." && (currentValue.endsWith(".") || currentValue === "")) {
+      return;
+    }
+
+    if (["+", "-", "*", "/"].includes(key)) {
+      if (
+        currentValue === "" ||
+        ["+", "-", "*", "/"].includes(currentValue.slice(-1))
+      ) {
+        return;
+      }
+    }
+
+    display.value += key;
+  } else if (key === "Backspace") {
+    display.value = display.value.slice(0, -1);
+  } else if (key === "=" || key === "Enter") {
+    calculateResult();
+  } else if (key === "Escape") {
+    display.value = "";
+  } else {
+    event.preventDefault();
+  }
+});
+
+const calculateResult = () => {
+  let currentValue = display.value;
+
+  if (["+", "-", "*", "/"].includes(currentValue.slice(-1))) {
+    currentValue = currentValue.slice(0, -1);
+  }
+
+  try {
+    const result = eval(currentValue.replace(/\s+/g, ""));
+    display.value = isNaN(result) ? "Ошибка" : result.toString();
+  } catch (e) {
+    display.value = "Ошибка";
+  }
+};
+
+buttonGroup.addEventListener("click", (event) => {
   const target = event.target;
 
   if (target.id === "clear") {
@@ -12,14 +58,7 @@ buttonGroup.addEventListener("click", function (event) {
     const buttonText = target.textContent;
 
     if (buttonText === "=") {
-      try {
-        const result = new Function(
-          "return (" + display.value.replace(/\s+/g, "") + ")"
-        )();
-        display.value = result !== undefined ? result : "Ошибка";
-      } catch (e) {
-        display.value = "Ошибка";
-      }
+      calculateResult();
     } else {
       display.value += buttonText;
     }
