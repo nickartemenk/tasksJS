@@ -11,7 +11,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 300px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -23,7 +23,7 @@ body {
   border-radius: 5px;
   background-color: #e5e7eb;
   text-align: right;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .button-group {
@@ -34,7 +34,7 @@ body {
 
 button {
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1.25em;
   border: none;
   border-radius: 5px;
   background-color: #4f46e5;
@@ -49,4 +49,28 @@ button:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+#zero,
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight,
+#nine {
+  grid-column: span 2;
+}
+
+#clear,
+#backspace,
+#divide,
+#multiply,
+#subtract,
+#add,
+#equals,
+#decimal {
+  grid-row: 5 / 6;
 }
