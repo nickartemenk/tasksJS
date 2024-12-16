@@ -43,6 +43,10 @@ button {
   transition: background-color 0.3s, transform 0.1s;
 }
 
+.controls {
+  background-color: #22212e;
+}
+
 button:hover {
   background-color: #4338ca;
 }
@@ -51,26 +55,6 @@ button:active {
   transform: scale(0.95);
 }
 
-#zero,
-#one,
-#two,
-#three,
-#four,
-#five,
-#six,
-#seven,
-#eight,
-#nine {
-  grid-column: span 2;
-}
-
-#clear,
-#backspace,
-#divide,
-#multiply,
-#subtract,
-#add,
-#equals,
-#decimal {
-  grid-row: 5 / 6;
+#zero {
+  grid-column: span 3;
 }

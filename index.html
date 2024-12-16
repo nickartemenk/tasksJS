@@ -21,26 +21,30 @@
   </head>
   <body>
     <div class="calculator">
-      <input type="text" id="display" />
+      <input type="text" id="display" readonly />
       <div class="button-group" id="button-group">
-        <button id="clear">C</button>
-        <button id="backspace">DEL</button>
-        <button id="divide">/</button>
-        <button id="multiply">*</button>
-        <button id="subtract">-</button>
-        <button id="add">+</button>
-        <button id="equals">=</button>
+        <button id="clear" class="controls">C</button>
+        <button id="backspace" class="controls">DEL</button>
+        <button id="equals" class="controls">=</button>
+        <button id="divide" class="controls">/</button>
+
         <button id="one">1</button>
         <button id="two">2</button>
         <button id="three">3</button>
+        <button id="add" class="controls">+</button>
+
         <button id="four">4</button>
         <button id="five">5</button>
         <button id="six">6</button>
+        <button id="subtract" class="controls">-</button>
+
         <button id="seven">7</button>
         <button id="eight">8</button>
         <button id="nine">9</button>
+        <button id="multiply" class="controls">*</button>
+
         <button id="zero">0</button>
-        <button id="decimal">.</button>
+        <button id="decimal" class="controls">.</button>
       </div>
     </div>
   </body>
